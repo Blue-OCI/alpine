@@ -1,6 +1,7 @@
 FROM alpine:latest
 
-RUN apk -U upgrade
+RUN apk -U upgrade \
+&& apk --no-cache add libstdc++
 
 COPY --from=ghcr.io/blue-oci/hardened_malloc:latest /extract /usr/local/lib/
 
