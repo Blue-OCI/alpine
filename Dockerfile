@@ -1,7 +1,10 @@
 FROM alpine:latest
 
+LABEL maintainer="Thien Tran contact@tommytran.io"
+
 RUN apk -U upgrade \
-&& apk --no-cache add libstdc++
+    && apk add libstdc++ \
+    && rm -rf /var/cache/apk/*
 
 COPY --from=ghcr.io/blue-oci/hardened_malloc:latest /extract /usr/local/lib/
 

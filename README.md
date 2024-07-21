@@ -1,5 +1,8 @@
-# alpine
+# Alpine
 
-[![Build](https://github.com/Blue-OCI/alpine/actions/workflows/build.yml/badge.svg)](https://github.com/Blue-OCI/alpine/actions/workflows/build.yml)
+![Build, scan & push](https://github.com/Blue-OCI/alpine/actions/workflows/build.yml/badge.svg)
 
-Upstream Alpine container with hardened_malloc
+### Features & usage
+
+- Built on the [official image](https://github.com/alpinelinux/docker-alpine), to be used as a drop-in replacement.
+- hardened_malloc is included.
